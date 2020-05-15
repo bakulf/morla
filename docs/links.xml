@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<morla>
+  <title>External Links</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>Some important links</title>
+
+    <list>
+
+      <item>
+        <s><link external="http://www.morlardf.net/">Morla Web Site</link></s>
+      </item>
+
+      <item>
+        <s><link external="http://www.autistici.org/bakunin/">Author's HomePage</link></s>
+      </item>
+
+      <item>
+        <s><link external="http://www.ippolita.net/">Ippolita</link> è un
+	server e una comunità di "scriventi", un crocevia per condividere
+	strumenti e competenze tra i linguaggi del digitale e i linguaggi
+	della scrittura.
+	</s>
+      </item>
+
+      <item>
+        <s><link external="http://www.w3.org/RDF">RDF site</link> on <link external="http://www.w3.org">W3.org</link></s>
+      </item>
+
+      <item>
+        <s><link external="http://www.schemaweb.info/">SchemaWeb</link>
+        is a directory of RDF schemas expressed in the RDFS, OWL and DAML+OIL
+        schema languages.</s>
+      </item>
+    </list>
+
+  </section>
+</morla>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<morla>
+  <title>Morla Documentation</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>Index of documentation pages</title>
+    <list>
+      <item><s><link internal="rdf.xml">What is a RDF Document?</link></s></item>
+      <item><s><link internal="about.xml">About morla...</link></s></item>
+      <item><s><link internal="functions.xml">Functions</link></s></item>
+      <item><s><link internal="references.xml">References</link></s></item>
+      <item><s><link internal="links.xml">External Links</link></s></item>
+      <item><s><link internal="faq.xml">FAQ</link></s></item>
+    </list>
+
+  </section>
+</morla>

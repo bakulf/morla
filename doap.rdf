@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:doap="http://usefulinc.com/ns/doap#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+>
+
+  <rdf:Description rdf:nodeID="blank_node_0">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+    <foaf:name>Andrea</foaf:name>
+    <foaf:family_name>Marchesini</foaf:family_name>
+    <foaf:nick>baku</foaf:nick>
+    <foaf:mbox_sha1sum>a1e4d78463d750cb5d804dcc98d941da389516b3</foaf:mbox_sha1sum>
+    <rdfs:seeAlso rdf:resource="http://www.autistici.org/bakunin/foaf.rdf" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="blank_node_1">
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#CVSRepository" />
+    <doap:anon-root>:pserver:anonymous@ippolita.net:/home/cvs</doap:anon-root>
+    <doap:module>morla</doap:module>
+    <doap:browse rdf:resource="http://www.ippolita.net/cgi-bin/cvsweb/morla/" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.morlardf.net/">
+    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project" />
+    <doap:name>morla</doap:name>
+    <doap:homepage rdf:resource="http://www.morlardf.net/" />
+    <doap:created>2003-11-16</doap:created>
+    <doap:description>A RDF editor and a RDF navigator</doap:description>
+    <doap:screenshots rdf:resource="http://www.morlardf.net/screenshots.php" />
+    <doap:programming-language>C</doap:programming-language>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
+    <doap:download-page rdf:resource="http://www.morlardf.net/download.php" />
+    <doap:maintainer rdf:nodeID="blank_node_0" />
+    <doap:repository rdf:nodeID="blank_node_1" />
+    <doap:bug-database rdf:resource="http://bugs.morlardf.net/" />
+    <doap:mailing-list rdf:resource="http://morlardf.net/cgi-bin/mailman/listinfo/dev" />
+    <doap:developer rdf:nodeID="blank_node_0" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="">
+    <rdfs:seeAlso rdf:resource="http://www.morlardf.net/doap.rdf" />
+    <dc:title>DOAP for morla project</dc:title>
+    <dc:description>Some informations about morla project</dc:description>
+    <dc:creator rdf:nodeID="blank_node_0" />
+    <dc:maker rdf:nodeID="blank_node_0" />
+  </rdf:Description>
+
+</rdf:RDF>
+

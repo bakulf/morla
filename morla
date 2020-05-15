@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+   <!ENTITY rdf   "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+   <!ENTITY rdfs  "http://www.w3.org/2000/01/rdf-schema#" >
+   <!ENTITY dc    "http://purl.org/dc/elements/1.1/" >
+   <!ENTITY foaf  "http://xmlns.com/foaf/0.1/" >
+   <!ENTITY morla "http://www.morlardf.net/morla#" >
+   <!ENTITY mc    "http://www.morlardf.net/templates/category#" >
+]>
+
+<rdf:RDF
+   xmlns:rdf="&rdf;"
+   xmlns:rdfs="&rdfs;"
+   xmlns:dc="&dc;"
+   xmlns:foaf="&foaf;"
+   xmlns:morla="&morla;"
+>
+
+  <rdf:Description rdf:nodeID="me">
+    <foaf:name>Andrea Marchesini</foaf:name>
+    <rdfs:seeAlso rdf:resource="http://www.autistici.org/bakunin/foaf.rdf" />
+    <rdf:type rdf:resource="&foaf;Person" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tt_category">
+    <rdfs:label>Category</rdfs:label>
+    <rdfs:comment>Set the category for this subject.</rdfs:comment>
+    <morla:typeValue rdf:resource="&rdfs;Resource" />
+    <morla:hasRDFS rdf:resource="&morla;category" />
+    <morla:visible>yes</morla:visible>
+    <rdf:type rdf:resource="&morla;Input" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tt_input">
+    <rdfs:label>Input</rdfs:label>
+    <rdfs:comment>Set the inputs for this subject.</rdfs:comment>
+    <morla:typeValue rdf:resource="&morla;input" />
+    <morla:hasRDFS rdf:resource="&morla;hasInput" />
+    <morla:visible>yes</morla:visible>
+    <rdf:type rdf:resource="&morla;Input" />
+    <morla:minCardinality>1</morla:minCardinality>
+    <morla:maxCardinality>0</morla:maxCardinality>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_comment">
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&rdfs;comment" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>yes</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:comment>set a comment a this subject</rdfs:comment>
+    <morla:longText>yes</morla:longText>
+    <rdfs:label>Comment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_default">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Default value</rdfs:label>
+    <rdfs:comment>Set a default value for this input</rdfs:comment>
+    <morla:typeValue rdf:resource="&rdfs;Resource" />
+    <morla:hasRDFS rdf:resource="&morla;defaultValue" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_type">
+    <morla:defaultValue rdf:resource="&morla;Input" />
+    <morla:visible>no</morla:visible>
+    <morla:hasRDFS rdf:resource="&rdf;type" />
+    <morla:typeValue rdf:resource="&rdfs;Resource" />
+    <morla:minCardinality>1</morla:minCardinality>
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>empty_type</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tt_version">
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&morla;hasVersion" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <morla:minCardinality>1</morla:minCardinality>
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Has Version</rdfs:label>
+    <rdfs:comment>Set the version of this template</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_visible">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Visible</rdfs:label>
+    <rdfs:comment>Is this input visible?</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_visible_list" />
+    <morla:hasRDFS rdf:resource="&morla;visible" />
+    <morla:defaultValue>yes</morla:defaultValue>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_language">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Language</rdfs:label>
+    <rdfs:comment>Does this input need of a language value?</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_language_list" />
+    <morla:hasRDFS rdf:resource="&morla;language" />
+    <morla:defaultValue>yes</morla:defaultValue>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_long_text">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Long Text</rdfs:label>
+    <rdfs:comment>Does this input have a long text?</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_long_text_list" />
+    <morla:hasRDFS rdf:resource="&morla;longText" />
+    <morla:defaultValue>yes</morla:defaultValue>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_default_language">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Default Language</rdfs:label>
+    <rdfs:comment>Insert a default language value</rdfs:comment>
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:hasRDFS rdf:resource="&morla;defaultLanguage" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_datatype">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Datatype</rdfs:label>
+    <rdfs:comment>Does this input need of a datatype value?</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_datatype_list" />
+    <morla:hasRDFS rdf:resource="&morla;datatype" />
+    <morla:defaultValue>yes</morla:defaultValue>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_default_datatype">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Default Language</rdfs:label>
+    <rdfs:comment>Insert a default datatype value</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_detatype_default_list" />
+    <morla:hasRDFS rdf:resource="&morla;defaultDatatype" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_detatype_default_list">
+    <rdf:type rdf:resource="&morla;AltResource" />
+    <rdf:_1 rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    <rdf:_2 rdf:resource="http://www.w3.org/2001/XMLSchema#boolean" />
+    <rdf:_3 rdf:resource="http://www.w3.org/2001/XMLSchema#decimal" />
+    <rdf:_4 rdf:resource="http://www.w3.org/2001/XMLSchema#float" />
+    <rdf:_5 rdf:resource="http://www.w3.org/2001/XMLSchema#double" />
+    <rdf:_6 rdf:resource="http://www.w3.org/2001/XMLSchema#duration" />
+    <rdf:_7 rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:_8 rdf:resource="http://www.w3.org/2001/XMLSchema#time" />
+    <rdf:_9 rdf:resource="http://www.w3.org/2001/XMLSchema#date" />
+    <rdf:_10 rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth" />
+    <rdf:_11 rdf:resource="http://www.w3.org/2001/XMLSchema#gYear" />
+    <rdf:_12 rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay" />
+    <rdf:_13 rdf:resource="http://www.w3.org/2001/XMLSchema#gDay" />
+    <rdf:_14 rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth" />
+    <rdf:_15 rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary" />
+    <rdf:_16 rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary" />
+    <rdf:_17 rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI" />
+    <rdf:_18 rdf:resource="http://www.w3.org/2001/XMLSchema#QName" />
+    <rdf:_19 rdf:resource="http://www.w3.org/2001/XMLSchema#NOTATION" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_rdfs">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>RDFS</rdfs:label>
+    <rdfs:comment>The RDFS for this input</rdfs:comment>
+    <morla:typeValue rdf:resource="&rdfs;Resource" />
+    <morla:hasRDFS rdf:resource="&morla;hasRDFS" />
+    <morla:minCardinality>1</morla:minCardinality>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_typevalue">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Type Value</rdfs:label>
+    <rdfs:comment>The type of values for this input</rdfs:comment>
+    <morla:typeValue rdf:nodeID="ti_typevalue_list" />
+    <morla:hasRDFS rdf:resource="&morla;typeValue" />
+    <morla:defaultValue rdf:resource="&rdfs;Resource" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_typevalue_list">
+    <rdf:type rdf:resource="&morla;AltResource" />
+    <rdf:_1 rdf:resource="&rdfs;Resource" />
+    <rdf:_2 rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_mincardinality">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Minimum Cardinality</rdfs:label>
+    <morla:defaultValue>0</morla:defaultValue>
+    <rdfs:comment>Minimum Cardinality value for this subject</rdfs:comment>
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <morla:hasRDFS rdf:resource="&morla;minCardinality" />
+    <morla:minCardinality>1</morla:minCardinality>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_maxcardinality">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Maximum Cardinality</rdfs:label>
+    <rdfs:comment>Maximum Cardinality value for this subject (0 for infinite)</rdfs:comment>
+    <morla:defaultValue>1</morla:defaultValue>
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <morla:hasRDFS rdf:resource="&morla;maxCardinality" />
+    <morla:minCardinality>1</morla:minCardinality>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_label">
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&rdfs;label" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>yes</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <morla:minCardinality>1</morla:minCardinality>
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Label</rdfs:label>
+    <rdfs:comment>Set the label for this subject.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_function_init">
+    <rdf:type rdf:resource="&morla;Input" />
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&morla;functionInput" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <rdfs:label>Function Init</rdfs:label>
+    <rdfs:comment>The javascript code for the initialize procedure.</rdfs:comment>
+    <morla:longText>yes</morla:longText>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_function_check">
+    <rdf:type rdf:resource="&morla;Input" />
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&morla;functionCheck" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <rdfs:label>Function Check</rdfs:label>
+    <rdfs:comment>The javascript code for the checking procedure.</rdfs:comment>
+    <morla:longText>yes</morla:longText>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_function_destroy">
+    <rdf:type rdf:resource="&morla;Input" />
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&morla;functionDestroy" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <rdfs:label>Function Destroy</rdfs:label>
+    <rdfs:comment>The javascript code for the destroy procedure.</rdfs:comment>
+    <morla:longText>yes</morla:longText>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_function_save">
+    <rdf:type rdf:resource="&morla;Input" />
+    <morla:visible>yes</morla:visible>
+    <morla:hasRDFS rdf:resource="&morla;functionSave" />
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <rdfs:label>Function Save</rdfs:label>
+    <rdfs:comment>The javascript code for the saving procedure.</rdfs:comment>
+    <morla:longText>yes</morla:longText>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tt_name">
+    <rdfs:label>Name</rdfs:label>
+    <rdfs:comment>Name of this template</rdfs:comment>
+    <morla:minCardinality>1</morla:minCardinality>
+    <morla:typeValue rdf:resource="&rdfs;Literal" />
+    <morla:language>no</morla:language>
+    <morla:datatype>no</morla:datatype>
+    <morla:hasRDFS rdf:resource="&rdfs;label" />
+    <rdf:type rdf:resource="&morla;Input" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_visible_list">
+    <rdf:type rdf:resource="&morla;AltLiteral" />
+    <rdf:_1>yes</rdf:_1>
+    <rdf:_2>no</rdf:_2>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_long_text_list">
+    <rdf:type rdf:resource="&morla;AltLiteral" />
+    <rdf:_1>yes</rdf:_1>
+    <rdf:_2>no</rdf:_2>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_language_list">
+    <rdf:type rdf:resource="&morla;AltLiteral" />
+    <rdf:_1>yes</rdf:_1>
+    <rdf:_2>no</rdf:_2>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="ti_datatype_list">
+    <rdf:type rdf:resource="&morla;AltLiteral" />
+    <rdf:_1>yes</rdf:_1>
+    <rdf:_2>no</rdf:_2>
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tt_type">
+    <rdf:type rdf:resource="&morla;Input" />
+    <rdfs:label>Empty widget for rdf:type</rdfs:label>
+    <morla:typeValue rdf:resource="&rdfs;Resource" />
+    <morla:hasRDFS rdf:resource="&rdf;type" />
+    <morla:defaultValue rdf:resource="&morla;Template" />
+    <morla:visible>no</morla:visible>
+    <morla:minCardinality>1</morla:minCardinality>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;">
+    <dc:creator>Andrea Marchesini</dc:creator>
+    <dc:rights>Copyright © 2005-2007 Andrea Marchesini</dc:rights>
+    <dc:title>Model for template of morla</dc:title>
+    <dc:format>application/dc+xml</dc:format>
+    <foaf:maker rdf:nodeID="me" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;AltLiteral">
+    <rdfs:label>A list of alternative literals</rdfs:label>
+    <rdfs:comment>List of Alternative Literals.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+    <rdfs:subClassOf rdf:resource="&rdf;Property" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;AltResource">
+    <rdfs:label>A list of alternative resources</rdfs:label>
+    <rdfs:comment>List of Alternative Resources.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+    <rdfs:subClassOf rdf:resource="&rdf;Property" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;category">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The category of this template</rdfs:comment>
+    <rdfs:label>Category</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Template" />
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;defaultValue">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:comment>Default value for this property</rdfs:comment>
+    <rdfs:label>Default Value</rdfs:label>
+    <rdfs:domain rdf:resource="&morla;Input" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;hasInput">
+    <rdfs:label>Has Input</rdfs:label>
+    <rdfs:comment>Set a input for this template.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:range rdf:resource="&morla;Input" />
+    <rdfs:domain rdf:resource="&morla;Template" />
+    <rdf:type rdf:resource="&rdf;Property" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;hasRDFS">
+    <rdfs:comment>Set this RDFS for the subject resource.</rdfs:comment>
+    <rdfs:label>Has RDFS</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;hasVersion">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The version of this template</rdfs:comment>
+    <rdfs:label>Has Version</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Template" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;Input">
+    <rdfs:comment>An input for the subject resource.</rdfs:comment>
+    <rdfs:label>Input</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;minCardinality">
+    <rdfs:comment>Minimum Cardinality value for this subject resource?</rdfs:comment>
+    <rdfs:label>Minimum Cardinality</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;maxCardinality">
+    <rdfs:comment>Maximum Cardinality value for this subject resource?</rdfs:comment>
+    <rdfs:label>Maximum Cardinality</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;Template">
+    <rdfs:label>Template</rdfs:label>
+    <rdfs:comment>The template.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;typeValue">
+    <rdfs:label>Type Value</rdfs:label>
+    <rdfs:comment>Type of this input.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdf:type rdf:resource="&rdf;Property" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;visible">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>Is this resource visible? (yes or no)</rdfs:comment>
+    <rdfs:label>Visible</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;language">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>Does this literal input need a language? (yes or no)</rdfs:comment>
+    <rdfs:label>Language</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;datatype">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>Does this literal input need a datatype? (yes or no)</rdfs:comment>
+    <rdfs:label>Datatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;defaultDatatype">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The default datatype for this input</rdfs:comment>
+    <rdfs:label>Default Datatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Resource" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;defaultLanguage">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The default language for this input</rdfs:comment>
+    <rdfs:label>Default Language</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;functionInit">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The javascript code for the init procedure</rdfs:comment>
+    <rdfs:label>Function Init</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;functionCheck">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The javascript code for the checking procedure</rdfs:comment>
+    <rdfs:label>Function Check</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;functionDestroy">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The javascript code for the destroy procedure</rdfs:comment>
+    <rdfs:label>Function Destroy</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;functionSave">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:comment>The javascript code for the saving procedure</rdfs:comment>
+    <rdfs:label>Function Save</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="&morla;" />
+    <rdfs:domain rdf:resource="&morla;Input" />
+    <rdfs:range rdf:resource="&rdfs;Literal" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;input">
+    <rdf:type rdf:resource="&morla;Template" />
+    <rdfs:label>Template for inputs</rdfs:label>
+    <morla:hasVersion>0.7</morla:hasVersion>
+    <morla:category rdf:resource="&mc;templates" />
+    <morla:hasInput rdf:nodeID="ti_label" />
+    <morla:hasInput rdf:nodeID="ti_comment" />
+    <morla:hasInput rdf:nodeID="ti_language" />
+    <morla:hasInput rdf:nodeID="ti_default_language" />
+    <morla:hasInput rdf:nodeID="ti_datatype" />
+    <morla:hasInput rdf:nodeID="ti_default_datatype" />
+    <morla:hasInput rdf:nodeID="ti_visible" />
+    <morla:hasInput rdf:nodeID="ti_rdfs" />
+    <morla:hasInput rdf:nodeID="ti_mincardinality" />
+    <morla:hasInput rdf:nodeID="ti_maxcardinality" />
+    <morla:hasInput rdf:nodeID="ti_type" />
+    <morla:hasInput rdf:nodeID="ti_typevalue" />
+    <morla:hasInput rdf:nodeID="ti_default" />
+    <morla:hasInput rdf:nodeID="ti_long_text" />
+    <morla:hasInput rdf:nodeID="ti_function_init" />
+    <morla:hasInput rdf:nodeID="ti_function_check" />
+    <morla:hasInput rdf:nodeID="ti_function_destroy" />
+    <morla:hasInput rdf:nodeID="ti_function_save" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&morla;template">
+    <rdf:type rdf:resource="&morla;Template" />
+    <rdfs:label>Template for templates</rdfs:label>
+    <morla:category rdf:resource="&mc;templates" />
+    <morla:hasVersion>0.7</morla:hasVersion>
+    <morla:hasInput rdf:nodeID="tt_type" />
+    <morla:hasInput rdf:nodeID="tt_version" />
+    <morla:hasInput rdf:nodeID="tt_name" />
+    <morla:hasInput rdf:nodeID="tt_category" />
+    <morla:hasInput rdf:nodeID="tt_input" />
+  </rdf:Description>
+
+</rdf:RDF>
+

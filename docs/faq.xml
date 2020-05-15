@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<morla>
+  <title>Morla - FAQ</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>Do you have some questions?</title>
+
+    <p>
+      Send <link external="mailto:andrea.marchesini@somasuite.org">me</link>
+      your questions, and I will insert them in this page.
+    </p>
+
+  </section>
+</morla>

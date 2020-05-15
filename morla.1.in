@@ -1,0 +1,38 @@
+.TH MORLA 1 "9 April 2006" morla "User Commands"
+.SH NAME
+morla \- editor and browser of RDF document @VERSION@
+.SH SYNOPSIS
+.B morla [
+.I -h
+.B |
+.I --help
+.B ] [
+.I -t
+.B |
+.I --template
+.I template_name
+.B |
+.I template_uri
+.B ] [
+.I -i
+.B |
+.I --import
+.I template_uri
+.B ] [
+.I files...
+.B |
+.I URLs...
+.B ]
+.SH DESCRIPTION
+Morla is a multiplatform editor of RDF documents. It is based on libnxml and librdf libraries. With Morla you can manage more RDF documents simultaneously, visualize graphs and use templates for quick writing.
+
+With Morla you can import RDFS documents and use its content to write new RDF triples. Templates are also RDF documents and they make Morla easily personalizeble and expandable.
+
+You can also use Morla as RDF navigator, wandering among the net knots of the RDF documents present on internet exactly as we are used to do with normal browsers.
+
+Morla is a FreeSoftware project released under license GPL v2.0.
+.SH AUTHOR
+.nf
+morla written by Andrea Marchesini <andrea.marchesini@morlardf.net>
+Man page written by Andrea Marchesini <andrea.marchesini@morlardf.net>
+

@@ -1,0 +1,120 @@
+2011-02-07	morla	0.16.1
+	removed 'deprecated' flag
+
+2008-03-11	morla	0.16dev
+	ige-mac-integration package
+	rasqal 0.9.16 supported
+
+2008-03-07	morla	0.15
+	bug about the abort function
+
+2007-07-24	morla	0.14
+	morla_is_darwin ?
+	commit ML 
+	rasql_query_prepare for checks
+	g_get_user_config_dir()
+	gtk 2.12 updated
+
+2007-07-23	morla	0.13
+	a bug in the RDF parser
+	enviroment for the DOT cmd
+	0.13 released
+
+2007-06-20	morla	0.12
+	textview widget with highlights
+	textview != treeview
+	highlighting in preferences
+	demo in preferences
+	javascript engine
+	module support
+	gconf support for proxy setting
+	http://www.morlardf.net
+
+2007-03-06	morla	0.11
+	CACert is supported
+	import of templates as parameters (for the windows release)
+	close button in the gtknotebook
+	blank_node name in the preferences
+	preferences with a single dialog for the dot files
+	Copyright updated
+	Properties with LowerCase
+
+2006-10-05	morla	0.10.2
+	Proxy/Authentication
+	libnxml 0.15 with proxy
+	Curl for any download
+	
+2006-09-26	morla	0.10.1
+	bug on datatype saving error fixed
+	warning window must not be editable
+	libnxml 0.14 with useragent
+
+2006-08-24	morla	0.10
+	open empty documents
+	memorize the dimensions of the window
+	bugfixed on the maker.c and empty namespaces
+	templates with literal inputs but without language
+	template on the startup with -t option
+	template window with dinamic sizes
+	sparql and rdql supported
+	datatypes
+
+2006-06-19	morla	0.9
+	info about resources
+	recursive edit templates
+
+2006-05-22	morla	0.8
+	n-triples and turtle formats (reading and writing)
+	error log (with colors)
+	no loop of remote template request
+	template edit
+	automatic extensions (.rdf/.turtle/.nt)
+	kill under UNIX
+	
+2006-04-29	morla	0.7
+	info for the property in the navigator
+	MinCardinality and Max in templates and RDFS of morla
+	recursive templates (a typevalue of a input can be another template)
+	bugfix: file locale to/from uri
+
+2006-04-08	morla	0.6
+	gtkobject -> gobject
+	and no gtkWidget deprecates
+	new bootsplash and bold in the strings
+	pedantic and ascii compatible codes
+	english and italian update
+
+2006-03-21	morla	0.5
+	a little bug fixes
+	bootsplash from gimp
+
+2006-03-16	morla	0.4
+	This:Document
+	New bootsplash
+	default program from register of win32
+	last documents
+	help with xslt
+	Interface section in preference
+
+2006-02-06	morla	0.3
+	message error if execve returns errors
+	merge with rename of blanknode
+	%s substitution with the name of uri/file when morla execs a command
+	transient windows
+	tooltips with different languages
+	Reduce the string too long in the graph
+	Category in templates and alternative in inputs
+	A new system for the list in edit_triple
+	fopen -> g_open
+	stat -> g_stat
+	exec/fork -> g_child && g_spawn
+
+2006-01-08	morla	0.2
+	boot splash
+	preferences
+	templates
+	navigator
+
+2005-12-14	morla	0.1
+	initial release
+

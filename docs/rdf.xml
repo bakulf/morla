@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<morla>
+  <title>What is a RDF Document?</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>The RDF format</title>
+
+    <p>The Resource Description Framework (<b>RDF</b>) can be described as
+    a list of statements. Any statement is composed by a <i>subject</i>, 
+    a <i>predicate</i> and an <i>object</i>. With a RDF Document you can
+    describe what you want with some semantic rules. You documents will be
+    machines-understanble.</p>
+
+    <p>About RDF, read the links page and visit some external links.</p>
+  </section>
+
+</morla>

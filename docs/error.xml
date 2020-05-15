@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<morla>
+  <title>Error!</title>
+  <subtitle>Page not found!</subtitle>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <p>
+      The request page can't be showed. Check the network of your computer,
+      and the link. After these checks, send an email to the morla team.
+    </p>
+
+    <p>
+      Thank you for your collaboration.
+    </p>
+
+  </section>
+</morla>
+

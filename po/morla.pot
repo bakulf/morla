@@ -1,0 +1,2358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-07 20:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/about.c:63
+msgid "Authors:"
+msgstr ""
+
+#: src/about.c:72
+msgid "Artists:"
+msgstr ""
+
+#: src/about.c:117
+msgid "About Libraries..."
+msgstr ""
+
+#: src/checks.c:37
+#, c-format
+msgid ""
+"Your system has not a stable release of lib Rasqal (%s).\n"
+"Some query may not return true results. Other ones crash and if it is, morla "
+"crashes too.\n"
+"Try to update this library (maybe also Redland).\n"
+"\n"
+"Lib Rasqal copyright:\n"
+"%s"
+msgstr ""
+
+#: src/checks.c:60
+#, c-format
+msgid ""
+"Your system has not a compatible or stable release of libRDF - Redland "
+"(%s).\n"
+"Some RDF document may not be opened. Other ones crash and if it is, morla "
+"crashes too.\n"
+"Try to update this library.\n"
+"\n"
+"Lib RDF - Redland copyright:\n"
+"%s"
+msgstr ""
+
+#: src/datatype.c:70
+msgid "no datatype"
+msgstr ""
+
+#: src/datatype.c:74
+msgid "String"
+msgstr ""
+
+#: src/datatype.c:76
+msgid "The string datatype represents character strings in XML."
+msgstr ""
+
+#: src/datatype.c:80
+msgid "Boolean value"
+msgstr ""
+
+#: src/datatype.c:83
+msgid ""
+"Boolean has the value space required to support the mathematical concept of "
+"binary-valued logic: {true, false}."
+msgstr ""
+
+#: src/datatype.c:87
+msgid "Decimal number"
+msgstr ""
+
+#: src/datatype.c:90
+msgid ""
+"Decimal represents a subset of the real numbers; which can be represented by "
+"decimal numerals."
+msgstr ""
+
+#: src/datatype.c:94
+msgid "Float number"
+msgstr ""
+
+#: src/datatype.c:97
+msgid ""
+"Float is patterned after the IEEE single-precision 32-bit floating point "
+"type."
+msgstr ""
+
+#: src/datatype.c:101
+msgid "Double number"
+msgstr ""
+
+#: src/datatype.c:104
+msgid ""
+"The double datatype is patterned after the IEEE double-precision 64-bit "
+"floating point type."
+msgstr ""
+
+#: src/datatype.c:108
+msgid "Duration"
+msgstr ""
+
+#: src/datatype.c:109
+msgid "Duration represents a duration of time."
+msgstr ""
+
+#: src/datatype.c:113
+msgid "Data and Time"
+msgstr ""
+
+#: src/datatype.c:116
+msgid ""
+"DateTime values may be viewed as objects with integer-valued year, month, "
+"day, hour and minute properties, a decimal-valued second property, and a "
+"boolean timezoned property."
+msgstr ""
+
+#: src/datatype.c:120
+msgid "Time"
+msgstr ""
+
+#: src/datatype.c:122
+msgid "Time represents an instant of time that recurs every day."
+msgstr ""
+
+#: src/datatype.c:126
+msgid "Date"
+msgstr ""
+
+#: src/datatype.c:129
+msgid ""
+"The value space of date consists of top-open intervals of exactly one day in "
+"length on the timelines of dateTime, beginning on the beginning moment of "
+"each day (in each timezone), i.e. '00:00:00', up to but not including "
+"'24:00:00' (which is identical with '00:00:00' of the next day)."
+msgstr ""
+
+#: src/datatype.c:133
+msgid "Year and Month"
+msgstr ""
+
+#: src/datatype.c:136
+msgid ""
+"gYearMonth represents a specific gregorian month in a specific gregorian "
+"year."
+msgstr ""
+
+#: src/datatype.c:140
+msgid "Year"
+msgstr ""
+
+#: src/datatype.c:142
+msgid "gYear represents a gregorian calendar year."
+msgstr ""
+
+#: src/datatype.c:146
+msgid "Month and Day"
+msgstr ""
+
+#: src/datatype.c:149
+msgid ""
+"gMonthDay is a gregorian date that recurs, specifically a day of the year "
+"such as the third of May."
+msgstr ""
+
+#: src/datatype.c:153
+msgid "Day"
+msgstr ""
+
+#: src/datatype.c:156
+msgid ""
+"gDay is a gregorian day that recurs, specifically a day of the month such as "
+"the 5th of the month."
+msgstr ""
+
+#: src/datatype.c:160
+msgid "Month"
+msgstr ""
+
+#: src/datatype.c:162
+msgid "gMonth is a gregorian month that recurs every year."
+msgstr ""
+
+#: src/datatype.c:166
+msgid "hex-encoded binary data"
+msgstr ""
+
+#: src/datatype.c:168
+msgid "hexBinary represents arbitrary hex-encoded binary data."
+msgstr ""
+
+#: src/datatype.c:172
+msgid "Base64 encoded binary data"
+msgstr ""
+
+#: src/datatype.c:174
+msgid "base64Binary represents Base64-encoded arbitrary binary data."
+msgstr ""
+
+#: src/datatype.c:178
+msgid "Uri"
+msgstr ""
+
+#: src/datatype.c:180
+msgid "anyURI represents a Uniform Resource Identifier Reference (URI)."
+msgstr ""
+
+#: src/datatype.c:184
+msgid "Qualified Name"
+msgstr ""
+
+#: src/datatype.c:185
+msgid "QName represents XML qualified names."
+msgstr ""
+
+#: src/datatype.c:189
+msgid "Notation"
+msgstr ""
+
+#: src/datatype.c:192
+msgid ""
+"NOTATION represents the NOTATION attribute type from XML 1.0 (Second "
+"Edition)."
+msgstr ""
+
+#: src/datatype.c:230
+msgid "Datatype unknown"
+msgstr ""
+
+#: src/datatype.c:270
+#, c-format
+msgid "%sThe object '%s' is not a boolean value (true or false)"
+msgstr ""
+
+#: src/datatype.c:292
+#, c-format
+msgid "%sThe object '%s' is not a decimal value (-12, 20)"
+msgstr ""
+
+#: src/datatype.c:306
+#, c-format
+msgid ""
+"%sThe object '%s' is not a float value (-1E4, 1267.43233E12, 12.78e-2, 12 , "
+"-0, 0)"
+msgstr ""
+
+#: src/datatype.c:324
+#, c-format
+msgid ""
+"%sThe object '%s' is not a double value (-1E4, 1267.43233E12, 12.78e-2, 12 , "
+"-0, 0 and INF)"
+msgstr ""
+
+#: src/datatype.c:350
+#, c-format
+msgid "%sThe object '%s' is not a duration value (P1347Y, P1347M and P1Y2MT2H)"
+msgstr ""
+
+#: src/datatype.c:373 src/datatype.c:376 src/datatype.c:379 src/datatype.c:382
+#: src/datatype.c:385 src/datatype.c:388 src/datatype.c:391 src/datatype.c:394
+#: src/datatype.c:397 src/datatype.c:400 src/datatype.c:403 src/datatype.c:406
+#: src/datatype.c:409 src/datatype.c:412 src/datatype.c:415 src/datatype.c:418
+#: src/datatype.c:421 src/datatype.c:424 src/datatype.c:427
+#, c-format
+msgid "%sThe object '%s' is not a dateTime value (0001-01-01T00:00:00)"
+msgstr ""
+
+#: src/datatype.c:441 src/datatype.c:443 src/datatype.c:445 src/datatype.c:447
+#: src/datatype.c:449 src/datatype.c:451 src/datatype.c:453 src/datatype.c:455
+#, c-format
+msgid "%sThe object '%s' is not a time value (00:00:00)"
+msgstr ""
+
+#: src/datatype.c:469 src/datatype.c:471 src/datatype.c:473 src/datatype.c:475
+#: src/datatype.c:477 src/datatype.c:479 src/datatype.c:481 src/datatype.c:483
+#: src/datatype.c:485 src/datatype.c:487
+#, c-format
+msgid "%sThe object '%s' is not a date value (0001-01-01)"
+msgstr ""
+
+#: src/datatype.c:501 src/datatype.c:503 src/datatype.c:505 src/datatype.c:507
+#: src/datatype.c:509 src/datatype.c:511 src/datatype.c:513
+#, c-format
+msgid "%sThe object '%s' is not a gYearMonth value (2005-04)"
+msgstr ""
+
+#: src/datatype.c:526 src/datatype.c:527 src/datatype.c:528 src/datatype.c:529
+#, c-format
+msgid "%sThe object '%s' is not a gYear value (2005)"
+msgstr ""
+
+#: src/datatype.c:542 src/datatype.c:543
+#, c-format
+msgid "%sThe object '%s' is not a gMonth value (05)"
+msgstr ""
+
+#: src/datatype.c:557 src/datatype.c:559 src/datatype.c:561 src/datatype.c:563
+#: src/datatype.c:565
+#, c-format
+msgid "%sThe object '%s' is not a gMonthDay value (MM:DD)"
+msgstr ""
+
+#: src/datatype.c:578 src/datatype.c:579
+#, c-format
+msgid "%sThe object '%s' is not a gDay value (DD)"
+msgstr ""
+
+#: src/datatype.c:600
+#, c-format
+msgid "%sThe object '%s' is not a hexBinary value (0AF37CD)"
+msgstr ""
+
+#: src/datatype.c:629
+#, c-format
+msgid "%sThe object '%s' is not a base64Binary value (0AF37CD)"
+msgstr ""
+
+#: src/dialog.c:41 src/dialog.c:89 src/edit.c:2233
+msgid "Question..."
+msgstr ""
+
+#: src/dialog.c:142 src/dialog.c:182 src/navigator.c:1394 src/template.c:5930
+msgid "Information..."
+msgstr ""
+
+#: src/dialog.c:267
+msgid "Show error messages"
+msgstr ""
+
+#: src/dialog.c:304 src/dialog.c:327
+msgid "Please Wait..."
+msgstr ""
+
+#: src/edit.c:629
+msgid "Search datas..."
+msgstr ""
+
+#: src/edit.c:661 src/query.c:416
+msgid "Results"
+msgstr ""
+
+#: src/edit.c:702
+msgid "Select a item of the list!"
+msgstr ""
+
+#. Uso editor_triple per la creazione della tripletta
+#: src/edit.c:1066
+msgid "Add RDF triple..."
+msgstr ""
+
+#. Soggetto risorsa:
+#: src/edit.c:1149 src/template.c:1937 src/template.c:6101
+msgid "<b>Subject</b>"
+msgstr ""
+
+#: src/edit.c:1164 src/template.c:1952 src/template.c:6116
+msgid "Resource: "
+msgstr ""
+
+#: src/edit.c:1189 src/graph.c:370 src/graph.c:397 src/maker.c:598
+#: src/maker.c:1978 src/navigator.c:109 src/template.c:5829
+msgid "This Document"
+msgstr ""
+
+#: src/edit.c:1207
+msgid "<b>Predicate</b>"
+msgstr ""
+
+#: src/edit.c:1229 src/rdfs.c:366
+msgid "RDFS: "
+msgstr ""
+
+#: src/edit.c:1319
+msgid "Property: "
+msgstr ""
+
+#. I campi di informazione:
+#: src/edit.c:1364
+msgid "Information"
+msgstr ""
+
+#: src/edit.c:1377 src/navigator.c:1421
+msgid "Label: "
+msgstr ""
+
+#: src/edit.c:1409 src/navigator.c:1471
+msgid "Comment: "
+msgstr ""
+
+#: src/edit.c:1441 src/navigator.c:1521
+msgid "Domain: "
+msgstr ""
+
+#: src/edit.c:1457 src/navigator.c:1536
+msgid "Range: "
+msgstr ""
+
+#: src/edit.c:1474
+msgid "<b>Predicate Item</b>"
+msgstr ""
+
+#: src/edit.c:1493
+msgid "Number: "
+msgstr ""
+
+#: src/edit.c:1506
+msgid "Auto"
+msgstr ""
+
+#: src/edit.c:1556
+msgid "<b>Object</b>"
+msgstr ""
+
+#: src/edit.c:1575 src/preferences.c:1035 src/template.c:4756
+msgid "Literal"
+msgstr ""
+
+#: src/edit.c:1580 src/preferences.c:613 src/template.c:2474
+#: src/template.c:4764 src/template.c:5304
+msgid "Resource"
+msgstr ""
+
+#: src/edit.c:1585 src/preferences.c:824 src/template.c:4773
+#: src/template.c:5309
+msgid "Blank node"
+msgstr ""
+
+#: src/edit.c:1617
+msgid "Language: "
+msgstr ""
+
+#: src/edit.c:1635
+msgid "Datatype: "
+msgstr ""
+
+#: src/edit.c:1665 src/template.c:5319
+msgid "Value: "
+msgstr ""
+
+#: src/edit.c:1786 src/template.c:2023 src/template.c:6192
+msgid "Invalid subject!"
+msgstr ""
+
+#: src/edit.c:1805
+msgid "Invalid predicate!"
+msgstr ""
+
+#: src/edit.c:1833
+msgid "Invalid object!"
+msgstr ""
+
+#: src/edit.c:1840
+msgid ""
+"In the document this object is a blank node.\n"
+"This triple can create some incongruences\n"
+"You are sure?"
+msgstr ""
+
+#: src/edit.c:1856
+msgid ""
+"In the document this object is a resource.\n"
+"This triple can create some incongruences\n"
+"You are sure?"
+msgstr ""
+
+#: src/edit.c:2098
+msgid "Set a subject!"
+msgstr ""
+
+#: src/edit.c:2172
+#, c-format
+msgid ""
+"This index is already used for this subject!\n"
+"Active the auto numeration?"
+msgstr ""
+
+#: src/edit.c:2176
+#, c-format
+msgid ""
+"The index can be 0!\n"
+"Active the auto numeration?"
+msgstr ""
+
+#: src/edit.c:2251
+msgid ""
+"The subject of this triple is not a bag, a sequence or a alternative!\n"
+"Do you want create it?"
+msgstr ""
+
+#: src/edit.c:2255
+msgid "Alternative"
+msgstr ""
+
+#: src/edit.c:2260
+msgid "Sequence"
+msgstr ""
+
+#: src/edit.c:2263
+msgid "Bag"
+msgstr ""
+
+#: src/edit.c:2346 src/edit.c:2350
+msgid "Import a RDF file..."
+msgstr ""
+
+#: src/edit.c:2353
+msgid "Import a RDF file: aborted"
+msgstr ""
+
+#: src/edit.c:2371
+#, c-format
+msgid "Error opening URI %s!"
+msgstr ""
+
+#: src/edit.c:2398
+msgid "RDF file merged!"
+msgstr ""
+
+#: src/edit.c:2419 src/edit.c:2421
+msgid "Import a RDF URI..."
+msgstr ""
+
+#: src/edit.c:2423
+msgid "Import a RDF URI: aborted"
+msgstr ""
+
+#: src/edit.c:2438
+#, c-format
+msgid "Error opening the RDF URI %s!"
+msgstr ""
+
+#: src/edit.c:2464
+msgid "RDF URI merged!"
+msgstr ""
+
+#: src/file.c:66
+msgid "This RDF Document is already opened!"
+msgstr ""
+
+#: src/file.c:87
+#, c-format
+msgid "Error opening the RDF file %s!"
+msgstr ""
+
+#: src/file.c:149
+#, c-format
+msgid "Error opening the RDF resource '%s'"
+msgstr ""
+
+#: src/file.c:188 src/file.c:193 src/merge.c:324
+msgid "Open a new RDF file..."
+msgstr ""
+
+#: src/file.c:196
+msgid "Open a new RDF file: aborted"
+msgstr ""
+
+#: src/file.c:207
+#, c-format
+msgid "The RDF file '%s' opened"
+msgstr ""
+
+#: src/file.c:229 src/file.c:354 src/graph.c:112 src/graph.c:276
+#: src/graph.c:469 src/query.c:155 src/template.c:6040
+msgid "This document is empty!"
+msgstr ""
+
+#: src/file.c:235
+msgid "Save in a new RDF file..."
+msgstr ""
+
+#: src/file.c:240
+msgid "Save the RDF file"
+msgstr ""
+
+#: src/file.c:243 src/file.c:285 src/file.c:298 src/file.c:310 src/file.c:383
+msgid "Save the RDF file: aborted"
+msgstr ""
+
+#: src/file.c:283 src/graph.c:297 src/graph.c:491 src/query.c:562
+#: src/query.c:1208
+msgid "The file exists. Overwrite?"
+msgstr ""
+
+#: src/file.c:296
+msgid "Error writing on file."
+msgstr ""
+
+#: src/file.c:307
+#, c-format
+msgid "Error writing on RDF file '%s'!"
+msgstr ""
+
+#. Sbocco la statusbar e libero la memoria:
+#. Sblocco la statusbar e ritorno
+#: src/file.c:341 src/file.c:392
+msgid "RDF file saved!"
+msgstr ""
+
+#: src/file.c:375
+msgid "RDF file saving..."
+msgstr ""
+
+#: src/file.c:381
+msgid "Error writing on the RDF file."
+msgstr ""
+
+#: src/file.c:420
+msgid "Exit without save?"
+msgstr ""
+
+#: src/file.c:426
+msgid "Closing..."
+msgstr ""
+
+#. Sblocco la statusbar
+#: src/file.c:468
+msgid "Closed"
+msgstr ""
+
+#: src/file.c:475
+#, c-format
+msgid "Do you want exit from %s?"
+msgstr ""
+
+#. Setto la statusbar:
+#: src/file.c:496
+msgid "new RDF editor created"
+msgstr ""
+
+#: src/filechooser.c:64
+msgid "RDF/XML format"
+msgstr ""
+
+#: src/filechooser.c:67
+msgid "RDF/N-TRIPLES format"
+msgstr ""
+
+#: src/filechooser.c:70
+msgid "RDF/TURTLE format"
+msgstr ""
+
+#: src/filechooser.c:176
+msgid "URI: "
+msgstr ""
+
+#: src/filechooser.c:185
+msgid "_Preferences..."
+msgstr ""
+
+#: src/filechooser.c:192
+msgid "Authentication"
+msgstr ""
+
+#: src/filechooser.c:201
+msgid "User:"
+msgstr ""
+
+#: src/filechooser.c:210 src/filechooser.c:237
+msgid "Password:"
+msgstr ""
+
+#: src/filechooser.c:217
+msgid "SSL Client Authentication"
+msgstr ""
+
+#: src/filechooser.c:226
+msgid "Certificate File:"
+msgstr ""
+
+#: src/filechooser.c:230
+msgid "Certificate SSL File"
+msgstr ""
+
+#: src/filechooser.c:247
+msgid "CA Certificate File:"
+msgstr ""
+
+#: src/filechooser.c:251
+msgid "CA Certificate SSL File"
+msgstr ""
+
+#: src/filechooser.c:258
+msgid "Verify Peer:"
+msgstr ""
+
+#: src/filechooser.c:264
+msgid "Timeout"
+msgstr ""
+
+#: src/filechooser.c:273
+msgid "Seconds:"
+msgstr ""
+
+#: src/filechooser.c:316
+msgid "No compatible URI!"
+msgstr ""
+
+#: src/graph.c:118 src/graph.c:191
+msgid "Creating graph error!"
+msgstr ""
+
+#: src/graph.c:150 src/main.c:1364
+msgid ""
+"Execution of external software error.\n"
+"Check the softwares in your preferences!"
+msgstr ""
+
+#: src/graph.c:282
+msgid "Save the graph in a file..."
+msgstr ""
+
+#: src/graph.c:287
+msgid "Save your graph"
+msgstr ""
+
+#: src/graph.c:290 src/graph.c:299 src/graph.c:309
+msgid "Save the graph: aborted"
+msgstr ""
+
+#. Libero memoria, sblocco la statusbar e ritorno:
+#: src/graph.c:317
+msgid "Graph saved!"
+msgstr ""
+
+#: src/graph.c:475 src/graph.c:480
+msgid "Save the graphviz source in a file..."
+msgstr ""
+
+#: src/graph.c:484 src/graph.c:493 src/graph.c:503
+msgid "Save the graphviz source: aborted"
+msgstr ""
+
+#. Libero memoria, sblocco la statusbar e ritorno:
+#: src/graph.c:511
+msgid "The graphviz source saved!"
+msgstr ""
+
+#: src/help.c:362 src/help.c:364
+msgid "Error!"
+msgstr ""
+
+#: src/help.c:366
+msgid ""
+"The error file does not exist, or your computer has some problem with the "
+"network!"
+msgstr ""
+
+#: src/help.c:445
+msgid "Help"
+msgstr ""
+
+#: src/help.c:485
+msgid "Back"
+msgstr ""
+
+#: src/help.c:504
+msgid "Index"
+msgstr ""
+
+#: src/help.c:524
+msgid "Forward"
+msgstr ""
+
+#: src/info.c:184
+msgid "No selected item!"
+msgstr ""
+
+#: src/info.c:203 src/navigator.c:94
+msgid "This RDF document is empty!"
+msgstr ""
+
+#: src/info.c:216
+msgid "Info about an URI"
+msgstr ""
+
+#: src/info.c:237
+msgid "Import other RDFS..."
+msgstr ""
+
+#: src/info.c:248
+msgid "Some property/class is unknown. Do you want import them?"
+msgstr ""
+
+#: src/info.c:252
+msgid "Ignored properties"
+msgstr ""
+
+#: src/info.c:276
+msgid "Property"
+msgstr ""
+
+#: src/info.c:375 src/navigator.c:1388
+msgid "No info for this URI"
+msgstr ""
+
+#. Setto il titolo nello splash
+#: src/init.c:124
+msgid "Reading the config file"
+msgstr ""
+
+#: src/init.c:128
+msgid "Error memory!"
+msgstr ""
+
+#: src/init.c:133 src/init.c:139 src/init.c:145 src/init.c:204 src/init.c:213
+#: src/init.c:222 src/init.c:269 src/init.c:279 src/init.c:313 src/init.c:470
+#: src/init.c:476 src/init.c:482 src/init.c:488 src/init.c:798 src/init.c:811
+#: src/init.c:824 src/init.c:837 src/init.c:850 src/init.c:863 src/init.c:876
+#, c-format
+msgid "Syntax error in file '%s'"
+msgstr ""
+
+#. Aggiorno lo splash e parso questo rdfs:
+#: src/init.c:256
+#, c-format
+msgid "Parsing local dump of '%s'"
+msgstr ""
+
+#. Splash:
+#: src/init.c:532
+msgid "Creating the config file"
+msgstr ""
+
+#: src/init.c:537 src/init.c:548
+#, c-format
+msgid "Error creating the directory '%s'!"
+msgstr ""
+
+#. Salvo la configurazione appena creata:
+#: src/init.c:572
+msgid "Saving the config file"
+msgstr ""
+
+#: src/init.c:591 src/query.c:531 src/query.c:1241
+#, c-format
+msgid "Error creating the file '%s'!"
+msgstr ""
+
+#: src/init.c:1096
+msgid "Creating the RDFS morla file"
+msgstr ""
+
+#: src/init.c:1112
+#, c-format
+msgid "Error writing file '%s'!"
+msgstr ""
+
+#: src/init.c:1157
+msgid "Reading the template file"
+msgstr ""
+
+#: src/init.c:1175
+msgid "Import template error!"
+msgstr ""
+
+#: src/last.c:112
+msgid "<empty>"
+msgstr ""
+
+#: src/main.c:145 src/main.c:940 src/maker.c:199 src/maker.c:223
+msgid "New RDF Document"
+msgstr ""
+
+#. Creo la scritta per il popup:
+#: src/main.c:161
+#, c-format
+msgid ""
+"Exit without save?\n"
+"Check: "
+msgstr ""
+
+#: src/main.c:204 src/main.c:229 src/merge.c:352
+msgid "Open a RDF URI"
+msgstr ""
+
+#. MENU FILE
+#: src/main.c:358 src/query.c:199
+msgid "_File"
+msgstr ""
+
+#: src/main.c:381 src/merge.c:102
+msgid "_Open a RDF file"
+msgstr ""
+
+#: src/main.c:395
+msgid "_Open a RDF URI"
+msgstr ""
+
+#: src/main.c:404
+msgid "_Search RDF in an URI"
+msgstr ""
+
+#: src/main.c:413
+msgid "_Special Opening procedure"
+msgstr ""
+
+#: src/main.c:427 src/preferences.c:206
+msgid "Last Documents"
+msgstr ""
+
+#: src/main.c:449
+msgid "_Save file"
+msgstr ""
+
+#: src/main.c:468
+msgid "_Special Saving procedure"
+msgstr ""
+
+#. MENU EDIT
+#: src/main.c:506 src/query.c:259
+msgid "_Edit"
+msgstr ""
+
+#: src/main.c:535
+msgid "_Add from templates"
+msgstr ""
+
+#: src/main.c:551
+msgid "_Modify with templates"
+msgstr ""
+
+#: src/main.c:567
+msgid "_Import a RDF Document"
+msgstr ""
+
+#: src/main.c:576
+msgid "... from a file"
+msgstr ""
+
+#: src/main.c:584
+msgid "... from an uri"
+msgstr ""
+
+#. INFO
+#: src/main.c:621
+msgid "_Information"
+msgstr ""
+
+#: src/main.c:628
+msgid "Info about this RDF Document"
+msgstr ""
+
+#: src/main.c:644
+msgid "Info about the selected element"
+msgstr ""
+
+#: src/main.c:659
+msgid "Info about an URI..."
+msgstr ""
+
+#. TEMPLATE
+#: src/main.c:674
+msgid "_Template"
+msgstr ""
+
+#: src/main.c:681
+msgid "Import from a _file..."
+msgstr ""
+
+#: src/main.c:690
+msgid "Import from an _URI..."
+msgstr ""
+
+#: src/main.c:702
+msgid "_Export a template"
+msgstr ""
+
+#: src/main.c:717
+msgid "_Show templates"
+msgstr ""
+
+#. MENU RDFS
+#: src/main.c:726
+msgid "_RDFS"
+msgstr ""
+
+#: src/main.c:732
+msgid "_Add RDFS"
+msgstr ""
+
+#: src/main.c:744
+msgid "_Show RDFS"
+msgstr ""
+
+#. MENU VIEW
+#: src/main.c:752
+msgid "_View"
+msgstr ""
+
+#. MENU GRAPH
+#: src/main.c:761
+msgid "_Graph"
+msgstr ""
+
+#: src/main.c:767
+msgid "Create _Graph"
+msgstr ""
+
+#: src/main.c:779
+msgid "_Save Graph As"
+msgstr ""
+
+#: src/main.c:788
+msgid "Save Graph_viz Source As"
+msgstr ""
+
+#: src/main.c:802
+msgid "_Merge more RDF Document in a Graph"
+msgstr ""
+
+#. MENU NAVIGATOR
+#: src/main.c:811
+msgid "_Navigator"
+msgstr ""
+
+#: src/main.c:817
+msgid "Open _navigator"
+msgstr ""
+
+#: src/main.c:831
+msgid "Open a RDF URI with the navigator"
+msgstr ""
+
+#. MENU QUERY
+#: src/main.c:840 src/query.c:210
+msgid "_Query"
+msgstr ""
+
+#: src/main.c:846
+msgid "SPARQL"
+msgstr ""
+
+#: src/main.c:856
+msgid "RDQL (RDF Data Query Language)"
+msgstr ""
+
+#. HELP
+#: src/main.c:865
+msgid "_Help"
+msgstr ""
+
+#: src/main.c:880
+msgid "_Find updates"
+msgstr ""
+
+#: src/main.c:891
+msgid "_Open the Web Page of Morla Project"
+msgstr ""
+
+#: src/main.c:905
+msgid "_Show used Libraries"
+msgstr ""
+
+#: src/main.c:948
+msgid "Open a RDF Document"
+msgstr ""
+
+#: src/main.c:959
+msgid "Save this RDF Document"
+msgstr ""
+
+#: src/main.c:967
+msgid "Save this RDF Document as a new file"
+msgstr ""
+
+#: src/main.c:979
+msgid "Undo editing"
+msgstr ""
+
+#: src/main.c:988
+msgid "Redo editing"
+msgstr ""
+
+#: src/main.c:999
+msgid "Close this RDF Document"
+msgstr ""
+
+#: src/main.c:1011
+msgid "Add a new RDF triple"
+msgstr ""
+
+#: src/main.c:1028
+msgid "Cut"
+msgstr ""
+
+#: src/main.c:1035
+msgid "Copy"
+msgstr ""
+
+#: src/main.c:1042
+msgid "Paste"
+msgstr ""
+
+#: src/main.c:1052
+msgid "Delete"
+msgstr ""
+
+#: src/main.c:1059
+msgid "rdfs"
+msgstr ""
+
+#: src/main.c:1063
+msgid "Show the RDFS"
+msgstr ""
+
+#: src/main.c:1070
+msgid "graph"
+msgstr ""
+
+#: src/main.c:1076
+msgid "Show the graph of this RDF Document"
+msgstr ""
+
+#: src/main.c:1084
+msgid "navigator"
+msgstr ""
+
+#: src/main.c:1090
+msgid "Open navigator with this RDF Document"
+msgstr ""
+
+#: src/main.c:1182
+msgid "Welcome to RDF editor!"
+msgstr ""
+
+#: src/maker.c:137
+msgid "Editing..."
+msgstr ""
+
+#: src/maker.c:545 src/template.c:5808 src/template.c:5975
+msgid "Subject"
+msgstr ""
+
+#: src/maker.c:555 src/template.c:5982
+msgid "Predicate"
+msgstr ""
+
+#: src/maker.c:565 src/template.c:5989
+msgid "Object"
+msgstr ""
+
+#: src/maker.c:627
+msgid "<b>(R)</b> "
+msgstr ""
+
+#: src/maker.c:631
+msgid "<b>(L)</b> "
+msgstr ""
+
+#: src/maker.c:635
+msgid "<b>(B)</b> "
+msgstr ""
+
+#: src/maker.c:724
+msgid "Namespace"
+msgstr ""
+
+#: src/maker.c:734
+msgid "Prefix"
+msgstr ""
+
+#: src/maker.c:744
+msgid "Visible"
+msgstr ""
+
+#: src/maker.c:938 src/maker.c:1121
+msgid "Open with this editor"
+msgstr ""
+
+#: src/maker.c:953 src/maker.c:1136 src/navigator.c:839
+msgid "Open in a browser"
+msgstr ""
+
+#: src/maker.c:968
+msgid "Modify this RDF triple"
+msgstr ""
+
+#: src/maker.c:981
+msgid "Modify all nodes/archs like this"
+msgstr ""
+
+#: src/maker.c:997
+msgid "Cut all nodes/archs like this"
+msgstr ""
+
+#: src/maker.c:1009
+msgid "Copy all nodes/archs like this"
+msgstr ""
+
+#: src/maker.c:1022
+msgid "Delete all nodes/archs like this"
+msgstr ""
+
+#: src/maker.c:1037
+msgid "Cut this RDF triple"
+msgstr ""
+
+#: src/maker.c:1048
+msgid "Copy this RDF triple"
+msgstr ""
+
+#: src/maker.c:1059
+msgid "Delete this RDF triple"
+msgstr ""
+
+#: src/maker.c:1075
+msgid "Show info about this element"
+msgstr ""
+
+#: src/maker.c:1106
+msgid "Import this RDFS"
+msgstr ""
+
+#: src/maker.c:1151
+msgid "Modify the RDF resource"
+msgstr ""
+
+#: src/maker.c:1162
+msgid "Modify the prefix"
+msgstr ""
+
+#: src/maker.c:1177
+msgid "Cut this RDFS"
+msgstr ""
+
+#: src/maker.c:1188
+msgid "Copy this RDFS"
+msgstr ""
+
+#: src/maker.c:1200
+msgid "Delete this RDFS"
+msgstr ""
+
+#: src/maker.c:1372
+msgid "Change Prefix for..."
+msgstr ""
+
+#: src/maker.c:1382
+#, c-format
+msgid "RDFS: <b>%s</b>"
+msgstr ""
+
+#: src/maker.c:1394 src/rdfs.c:376
+msgid "Prefix: "
+msgstr ""
+
+#: src/maker.c:1421
+msgid "No a valid prefix!"
+msgstr ""
+
+#: src/maker.c:1459
+msgid "Modify all URIs like this..."
+msgstr ""
+
+#: src/maker.c:1471 src/maker.c:1655
+msgid "New URI: "
+msgstr ""
+
+#: src/maker.c:1498 src/maker.c:1686
+msgid "No a valid URI!"
+msgstr ""
+
+#: src/maker.c:1584
+msgid "Modify this RDF triple..."
+msgstr ""
+
+#: src/maker.c:1643
+msgid "Modify this RDF URI..."
+msgstr ""
+
+#: src/maker.c:1806
+#, c-format
+msgid "Error opening '%s' resource!"
+msgstr ""
+
+#: src/merge.c:47
+msgid "Merge more one RDF in a graph..."
+msgstr ""
+
+#: src/merge.c:59
+msgid "List of RDFs"
+msgstr ""
+
+#: src/merge.c:83 src/search.c:412 src/search.c:455
+msgid "RDF"
+msgstr ""
+
+#: src/merge.c:116
+msgid "Open a RDF _URI"
+msgstr ""
+
+#: src/merge.c:144
+msgid "No RDF Document present!"
+msgstr ""
+
+#: src/merge.c:179
+#, c-format
+msgid "Error parsing URI '%s'!"
+msgstr ""
+
+#: src/merge.c:275
+msgid "No RDF Document selected!"
+msgstr ""
+
+#. Chiedo conferma:
+#: src/merge.c:280
+msgid "Sure to remove these RDFs?"
+msgstr ""
+
+#: src/navigator.c:138
+msgid "Navigator"
+msgstr ""
+
+#: src/navigator.c:646
+msgid "No data found!"
+msgstr ""
+
+#: src/navigator.c:797
+msgid "Open"
+msgstr ""
+
+#: src/navigator.c:805
+msgid "Open in a new tab"
+msgstr ""
+
+#: src/navigator.c:817
+msgid "Import as RDF"
+msgstr ""
+
+#: src/navigator.c:827
+msgid "Import as RDF in a new window"
+msgstr ""
+
+#: src/navigator.c:1028 src/navigator.c:1073 src/navigator.c:1224
+#: src/navigator.c:1260
+#, c-format
+msgid ""
+"Error opening resource '%s'\n"
+"Try to search some RDFs in this URI?"
+msgstr ""
+
+#: src/navigator.c:1252
+msgid "Open RDF URI for the navigator..."
+msgstr ""
+
+#: src/navigator.c:1297
+#, c-format
+msgid "Error opening resource '%s'!"
+msgstr ""
+
+#: src/preferences.c:147
+msgid "Preferences..."
+msgstr ""
+
+#: src/preferences.c:162
+msgid "General"
+msgstr ""
+
+#: src/preferences.c:164
+msgid "Softwares"
+msgstr ""
+
+#: src/preferences.c:173
+msgid "Select your web browser:"
+msgstr ""
+
+#: src/preferences.c:183
+msgid "Select your image viewer:"
+msgstr ""
+
+#: src/preferences.c:190
+#, c-format
+msgid "'%s' = url or image"
+msgstr ""
+
+#: src/preferences.c:193
+msgid "Undo and Redo"
+msgstr ""
+
+#: src/preferences.c:199
+msgid "Select your undo level:"
+msgstr ""
+
+#: src/preferences.c:212
+msgid "Select your last documents history:"
+msgstr ""
+
+#: src/preferences.c:219
+msgid "Show update"
+msgstr ""
+
+#: src/preferences.c:225
+msgid "Show with popup:"
+msgstr ""
+
+#: src/preferences.c:233
+msgid "Update Server"
+msgstr ""
+
+#: src/preferences.c:239
+msgid "Set the update server:"
+msgstr ""
+
+#: src/preferences.c:246
+msgid "Documentation Server"
+msgstr ""
+
+#: src/preferences.c:255
+msgid "Set the documentation server:"
+msgstr ""
+
+#: src/preferences.c:266
+msgid "(This input can be a directory of a remote server)"
+msgstr ""
+
+#: src/preferences.c:269
+msgid "Blank node name"
+msgstr ""
+
+#: src/preferences.c:278
+msgid "Set the blank node name:"
+msgstr ""
+
+#: src/preferences.c:290
+#, c-format
+msgid ""
+"(You can use '%d' if you want specify where the number should be: the_"
+"%d_blank_node)"
+msgstr ""
+
+#: src/preferences.c:293
+msgid "Automatic Extensions"
+msgstr ""
+
+#: src/preferences.c:299
+msgid "Set automatic extensions:"
+msgstr ""
+
+#: src/preferences.c:311
+msgid "Interface"
+msgstr ""
+
+#: src/preferences.c:313
+msgid "Colors"
+msgstr ""
+
+#: src/preferences.c:322
+msgid "Normal Background:"
+msgstr ""
+
+#: src/preferences.c:333
+msgid "Normal Foreground:"
+msgstr ""
+
+#: src/preferences.c:344
+msgid "Prelight Background:"
+msgstr ""
+
+#: src/preferences.c:355
+msgid "Prelight Foreground:"
+msgstr ""
+
+#: src/preferences.c:363 src/preferences.c:609 src/preferences.c:820
+#: src/preferences.c:1031 src/preferences.c:1131
+msgid "Preview"
+msgstr ""
+
+#: src/preferences.c:404
+msgid "Graphs"
+msgstr ""
+
+#: src/preferences.c:406
+msgid "Resource nodes"
+msgstr ""
+
+#: src/preferences.c:418 src/preferences.c:629 src/preferences.c:840
+#: src/preferences.c:1051
+msgid "Color:"
+msgstr ""
+
+#: src/preferences.c:429 src/preferences.c:640 src/preferences.c:851
+#: src/preferences.c:1062
+msgid "Font Color:"
+msgstr ""
+
+#: src/preferences.c:440 src/preferences.c:651 src/preferences.c:862
+#: src/preferences.c:1085 src/preferences.c:1430
+msgid "Style:"
+msgstr ""
+
+#: src/preferences.c:446 src/preferences.c:657 src/preferences.c:868
+msgid "filled"
+msgstr ""
+
+#: src/preferences.c:449 src/preferences.c:660 src/preferences.c:871
+#: src/preferences.c:1091
+msgid "solid"
+msgstr ""
+
+#: src/preferences.c:452 src/preferences.c:663 src/preferences.c:874
+#: src/preferences.c:1094
+msgid "dashed"
+msgstr ""
+
+#: src/preferences.c:455 src/preferences.c:666 src/preferences.c:877
+#: src/preferences.c:1097
+msgid "dotted"
+msgstr ""
+
+#: src/preferences.c:458 src/preferences.c:669 src/preferences.c:880
+#: src/preferences.c:1100
+msgid "bold"
+msgstr ""
+
+#: src/preferences.c:461 src/preferences.c:672 src/preferences.c:883
+#: src/preferences.c:1103
+msgid "invis"
+msgstr ""
+
+#: src/preferences.c:498 src/preferences.c:709 src/preferences.c:920
+msgid "Fill Color:"
+msgstr ""
+
+#: src/preferences.c:509 src/preferences.c:720 src/preferences.c:931
+msgid "Shape:"
+msgstr ""
+
+#: src/preferences.c:515 src/preferences.c:726 src/preferences.c:937
+msgid "plaintext"
+msgstr ""
+
+#: src/preferences.c:518 src/preferences.c:729 src/preferences.c:940
+msgid "ellipse"
+msgstr ""
+
+#: src/preferences.c:521 src/preferences.c:732 src/preferences.c:943
+msgid "circle"
+msgstr ""
+
+#: src/preferences.c:524 src/preferences.c:735 src/preferences.c:946
+msgid "egg"
+msgstr ""
+
+#: src/preferences.c:527 src/preferences.c:738 src/preferences.c:949
+msgid "triangle"
+msgstr ""
+
+#: src/preferences.c:530 src/preferences.c:741 src/preferences.c:952
+msgid "box"
+msgstr ""
+
+#: src/preferences.c:533 src/preferences.c:744 src/preferences.c:955
+msgid "diamond"
+msgstr ""
+
+#: src/preferences.c:536 src/preferences.c:747 src/preferences.c:958
+msgid "trapezium"
+msgstr ""
+
+#: src/preferences.c:539 src/preferences.c:750 src/preferences.c:961
+msgid "parallelogram"
+msgstr ""
+
+#: src/preferences.c:542 src/preferences.c:753 src/preferences.c:964
+msgid "house"
+msgstr ""
+
+#: src/preferences.c:545 src/preferences.c:756 src/preferences.c:967
+msgid "hexagon"
+msgstr ""
+
+#: src/preferences.c:548 src/preferences.c:759 src/preferences.c:970
+msgid "octagon"
+msgstr ""
+
+#: src/preferences.c:600 src/preferences.c:811 src/preferences.c:1022
+#: src/preferences.c:1073
+msgid "Font:"
+msgstr ""
+
+#. BLANK NODE
+#: src/preferences.c:617
+msgid "Blank nodes"
+msgstr ""
+
+#. LITERAL
+#: src/preferences.c:828
+msgid "Literal nodes"
+msgstr ""
+
+#. EDGE
+#: src/preferences.c:1039
+msgid "Edge"
+msgstr ""
+
+#. FORMAT
+#: src/preferences.c:1157
+msgid "Output format"
+msgstr ""
+
+#: src/preferences.c:1163
+msgid "Format:"
+msgstr ""
+
+#: src/preferences.c:1169
+msgid "png"
+msgstr ""
+
+#: src/preferences.c:1172
+msgid "jpg"
+msgstr ""
+
+#: src/preferences.c:1175
+msgid "gif"
+msgstr ""
+
+#: src/preferences.c:1178
+msgid "ps"
+msgstr ""
+
+#: src/preferences.c:1181
+msgid "svg"
+msgstr ""
+
+#: src/preferences.c:1212
+msgid "Network"
+msgstr ""
+
+#: src/preferences.c:1217
+msgid "Proxy"
+msgstr ""
+
+#: src/preferences.c:1251
+msgid "Proxy Server:"
+msgstr ""
+
+#: src/preferences.c:1262
+msgid "Proxy Port:"
+msgstr ""
+
+#: src/preferences.c:1274
+msgid "Proxy User:"
+msgstr ""
+
+#: src/preferences.c:1285
+msgid "Proxy Password:"
+msgstr ""
+
+#: src/preferences.c:1295
+msgid "Gnome"
+msgstr ""
+
+#: src/preferences.c:1301
+msgid "Use Gnome Setting:"
+msgstr ""
+
+#: src/preferences.c:1316 src/preferences.c:1321
+msgid "Highlighting"
+msgstr ""
+
+#: src/preferences.c:1364
+msgid "Tags"
+msgstr ""
+
+#: src/preferences.c:1401
+msgid "Rename"
+msgstr ""
+
+#: src/preferences.c:1436 src/preferences.c:1466 src/preferences.c:1499
+#: src/preferences.c:1547 src/preferences.c:1592
+msgid "Normal"
+msgstr ""
+
+#: src/preferences.c:1439
+msgid "Oblique"
+msgstr ""
+
+#: src/preferences.c:1442
+msgid "Italic"
+msgstr ""
+
+#: src/preferences.c:1460
+msgid "Variant:"
+msgstr ""
+
+#: src/preferences.c:1469
+msgid "Small Caps"
+msgstr ""
+
+#: src/preferences.c:1487
+msgid "Weight:"
+msgstr ""
+
+#: src/preferences.c:1493
+msgid "Ultralight"
+msgstr ""
+
+#: src/preferences.c:1496
+msgid "Light"
+msgstr ""
+
+#: src/preferences.c:1502
+msgid "Semibold"
+msgstr ""
+
+#: src/preferences.c:1505
+msgid "Bold"
+msgstr ""
+
+#: src/preferences.c:1508
+msgid "Ultrabold"
+msgstr ""
+
+#: src/preferences.c:1511
+msgid "Heavy"
+msgstr ""
+
+#: src/preferences.c:1529
+msgid "Stretch:"
+msgstr ""
+
+#: src/preferences.c:1535
+msgid "Ultra Condensed"
+msgstr ""
+
+#: src/preferences.c:1538
+msgid "Extra Condensed"
+msgstr ""
+
+#: src/preferences.c:1541
+msgid "Condensed"
+msgstr ""
+
+#: src/preferences.c:1544
+msgid "Semi Condensed"
+msgstr ""
+
+#: src/preferences.c:1550
+msgid "Semi Expanded"
+msgstr ""
+
+#: src/preferences.c:1553
+msgid "Expanded"
+msgstr ""
+
+#: src/preferences.c:1556
+msgid "Extra Expanded"
+msgstr ""
+
+#: src/preferences.c:1559
+msgid "Ultra Expanded"
+msgstr ""
+
+#: src/preferences.c:1577
+msgid "Scale:"
+msgstr ""
+
+#: src/preferences.c:1583
+msgid "XX Small"
+msgstr ""
+
+#: src/preferences.c:1586
+msgid "X Small"
+msgstr ""
+
+#: src/preferences.c:1589
+msgid "Small"
+msgstr ""
+
+#: src/preferences.c:1595
+msgid "X Large"
+msgstr ""
+
+#: src/preferences.c:1598
+msgid "XX Large"
+msgstr ""
+
+#: src/preferences.c:1616
+msgid "Foreground:"
+msgstr ""
+
+#: src/preferences.c:1628
+msgid "Background:"
+msgstr ""
+
+#: src/preferences.c:1640
+msgid "Underline:"
+msgstr ""
+
+#: src/preferences.c:1646
+msgid "None"
+msgstr ""
+
+#: src/preferences.c:1649
+msgid "Single"
+msgstr ""
+
+#: src/preferences.c:1652
+msgid "Double"
+msgstr ""
+
+#: src/preferences.c:1667
+msgid "Reset the default tags"
+msgstr ""
+
+#: src/preferences.c:1672
+msgid "Demo"
+msgstr ""
+
+#: src/preferences.c:1733
+msgid "No a compatible web browser!"
+msgstr ""
+
+#: src/preferences.c:1739
+msgid "No a compatible image viewer!"
+msgstr ""
+
+#: src/preferences.c:1745
+msgid "No a compatible update server!"
+msgstr ""
+
+#: src/preferences.c:1751
+msgid "No a compatible documentation server!"
+msgstr ""
+
+#: src/preferences.c:1759
+msgid "No a valid proxy value!"
+msgstr ""
+
+#: src/preferences.c:2665
+msgid "<b>Preview for these colors</b>"
+msgstr ""
+
+#: src/preferences.c:2899
+msgid "New Tag..."
+msgstr ""
+
+#: src/preferences.c:2911
+msgid "New Tag"
+msgstr ""
+
+#: src/preferences.c:2937
+msgid "The tag cann't be empty!"
+msgstr ""
+
+#: src/preferences.c:2990 src/preferences.c:3018
+msgid "Select a tag!"
+msgstr ""
+
+#: src/preferences.c:3022
+msgid "Sure to remove this tag?"
+msgstr ""
+
+#: src/query.c:164
+msgid "Query a RDF file..."
+msgstr ""
+
+#: src/query.c:167
+msgid "Query a RDF document"
+msgstr ""
+
+#: src/query.c:235
+msgid "_Results"
+msgstr ""
+
+#: src/query.c:242
+msgid "_Open with Morla"
+msgstr ""
+
+#: src/query.c:265
+msgid "_Find resource"
+msgstr ""
+
+#: src/query.c:357
+msgid "Insert RDFS"
+msgstr ""
+
+#: src/query.c:366
+msgid "Find Resources"
+msgstr ""
+
+#: src/query.c:381
+msgid "Text"
+msgstr ""
+
+#: src/query.c:459
+msgid "Querying done!"
+msgstr ""
+
+#: src/query.c:478
+msgid "Open a QUERY file..."
+msgstr ""
+
+#: src/query.c:557 src/query.c:1203
+msgid "Save a QUERY in a file..."
+msgstr ""
+
+#: src/query.c:607
+msgid "Close without save?"
+msgstr ""
+
+#: src/query.c:660
+msgid "Error creating the enviroment for your query"
+msgstr ""
+
+#: src/query.c:681
+msgid "Error executing the query!"
+msgstr ""
+
+#: src/query.c:1087
+msgid "true"
+msgstr ""
+
+#: src/query.c:1087
+msgid "false"
+msgstr ""
+
+#: src/query.c:1115
+msgid "Error saving the temporary file."
+msgstr ""
+
+#: src/query.c:1174
+msgid "Error opening the RDF results"
+msgstr ""
+
+#: src/query.c:1449
+msgid "Error in your query!"
+msgstr ""
+
+#: src/query.c:1454
+msgid "No errors in your query."
+msgstr ""
+
+#: src/rdf.c:182
+msgid "RDF/XML parser:"
+msgstr ""
+
+#: src/rdf.c:229
+msgid "RDF/N-TRIPLES parser:"
+msgstr ""
+
+#: src/rdf.c:276
+msgid "RDF/TURTLE parser:"
+msgstr ""
+
+#: src/rdfs.c:49 src/rdfs.c:62
+msgid "RDFSs import"
+msgstr ""
+
+#: src/rdfs.c:89
+msgid "RDFS"
+msgstr ""
+
+#: src/rdfs.c:100
+msgid "Default prefix"
+msgstr ""
+
+#: src/rdfs.c:146
+msgid "Sure to remove this RDFS ?"
+msgstr ""
+
+#: src/rdfs.c:354
+msgid "New RDFS..."
+msgstr ""
+
+#: src/rdfs.c:414
+msgid "Incompatible RDFS!"
+msgstr ""
+
+#: src/rdfs.c:420
+msgid "Incompatible Prefix!"
+msgstr ""
+
+#: src/rdfs.c:434
+msgid "RDFS already present in the list!"
+msgstr ""
+
+#: src/rdfs.c:443
+#, c-format
+msgid "Prefix already used for namespace '%s'"
+msgstr ""
+
+#: src/rdfs.c:469
+msgid "Error opening the RDFS!"
+msgstr ""
+
+#: src/rdfs.c:490
+msgid "Error importing the RDFS document!"
+msgstr ""
+
+#: src/search.c:201 src/search.c:211
+msgid "Memory error ?!?"
+msgstr ""
+
+#: src/search.c:225
+msgid "This document has not a XML syntax!"
+msgstr ""
+
+#: src/search.c:364
+#, c-format
+msgid "No RDF Document found! %s"
+msgstr ""
+
+#: src/search.c:368
+#, c-format
+msgid "No RDF Document found!"
+msgstr ""
+
+#: src/search.c:376
+msgid "RDF founder"
+msgstr ""
+
+#: src/search.c:385
+msgid "Meta RDFs"
+msgstr ""
+
+#: src/search.c:428
+msgid "Other RDFs"
+msgstr ""
+
+#: src/search.c:510
+msgid "Select some URIs!"
+msgstr ""
+
+#: src/splash.c:87
+msgid "Morla BootSplash"
+msgstr ""
+
+#: src/template.c:201 src/template.c:236
+#, c-format
+msgid "<b>Generic</b>"
+msgstr ""
+
+#: src/template.c:270 src/template.c:319 src/template.c:321
+msgid "Import a new template..."
+msgstr ""
+
+#: src/template.c:275
+msgid "Open a template file..."
+msgstr ""
+
+#: src/template.c:278
+msgid "Open a template file: aborted"
+msgstr ""
+
+#: src/template.c:292 src/template.c:334
+#, c-format
+msgid "Template %s imported"
+msgstr ""
+
+#: src/template.c:299
+msgid "Open a template file: error!"
+msgstr ""
+
+#: src/template.c:323
+msgid "Import a new template: about"
+msgstr ""
+
+#: src/template.c:388
+#, c-format
+msgid "Error opening resource '%s'"
+msgstr ""
+
+#: src/template.c:435
+msgid "No template in this RDF Document!"
+msgstr ""
+
+#: src/template.c:487
+#, c-format
+msgid "Duplicated template '%s'!"
+msgstr ""
+
+#: src/template.c:552 src/template.c:577
+#, c-format
+msgid "No input for template '%s'"
+msgstr ""
+
+#: src/template.c:558
+#, c-format
+msgid "No URI, name or version for template '%s'"
+msgstr ""
+
+#: src/template.c:749
+#, c-format
+msgid "Input '%s' has no rdfs, label or istance of input!"
+msgstr ""
+
+#: src/template.c:770
+#, c-format
+msgid "This input '%s' is novisible but has not a defualt value!"
+msgstr ""
+
+#: src/template.c:788
+#, c-format
+msgid ""
+"This input '%s' is novisible but has max_cardinality or min_cardinality != 1!"
+msgstr ""
+
+#: src/template.c:809 src/template.c:826 src/template.c:871
+#, c-format
+msgid ""
+"This input '%s' has a alternative list of value but it is not a alternative "
+"typevalue!"
+msgstr ""
+
+#: src/template.c:840 src/template.c:855
+#, c-format
+msgid "This input '%s' has no a alternative list of value!"
+msgstr ""
+
+#: src/template.c:898
+#, c-format
+msgid "The input '%s' tries to use a impossibile datatype '%s'."
+msgstr ""
+
+#: src/template.c:1254 src/template.c:1261
+msgid "Error saving the template file!"
+msgstr ""
+
+#: src/template.c:1290 src/template.c:1295
+msgid "Export a template..."
+msgstr ""
+
+#: src/template.c:1298
+msgid "Export a template: aborted"
+msgstr ""
+
+#: src/template.c:1305
+msgid "Error saving the template into a file!"
+msgstr ""
+
+#: src/template.c:1306
+msgid "Export a template: error."
+msgstr ""
+
+#: src/template.c:1319
+msgid "Export a template: done."
+msgstr ""
+
+#: src/template.c:1423 src/template.c:1436
+msgid "Templates import"
+msgstr ""
+
+#: src/template.c:1463 src/template.c:1928 src/template.c:5277
+#: src/template.c:6092
+msgid "Template"
+msgstr ""
+
+#: src/template.c:1470 src/update.c:388
+msgid "Version"
+msgstr ""
+
+#: src/template.c:1477
+msgid "Category"
+msgstr ""
+
+#: src/template.c:1484
+msgid "URI"
+msgstr ""
+
+#: src/template.c:1516 src/template.c:1529
+msgid "Select a template!"
+msgstr ""
+
+#: src/template.c:1533
+msgid "Sure to remove this template?"
+msgstr ""
+
+#: src/template.c:1716
+msgid "This template requires other templates. Do you want import them?\n"
+msgstr ""
+
+#: src/template.c:1977 src/template.c:6141
+msgid "This document"
+msgstr ""
+
+#: src/template.c:2169
+msgid "Select a input!"
+msgstr ""
+
+#: src/template.c:2216
+msgid "Single input..."
+msgstr ""
+
+#: src/template.c:2476
+msgid "Blanknode"
+msgstr ""
+
+#: src/template.c:2479
+#, c-format
+msgid " with template)"
+msgstr ""
+
+#: src/template.c:2481
+#, c-format
+msgid " without template)"
+msgstr ""
+
+#: src/template.c:2495
+#, c-format
+msgid "%s: (L) %s"
+msgstr ""
+
+#: src/template.c:2500
+#, c-format
+msgid "%s: (R) %s"
+msgstr ""
+
+#: src/template.c:2505
+#, c-format
+msgid "%s: (B) %s"
+msgstr ""
+
+#: src/template.c:2562 src/template.c:2649 src/template.c:2691
+#: src/template.c:2703 src/template.c:2741 src/template.c:2778
+#: src/template.c:2794 src/template.c:2838 src/template.c:2847
+#, c-format
+msgid "No compatible value for input %s"
+msgstr ""
+
+#: src/template.c:2872
+#, c-format
+msgid "Not enough elements for input %s"
+msgstr ""
+
+#: src/template.c:4302
+msgid "String:"
+msgstr ""
+
+#: src/template.c:4354 src/template.c:4783
+msgid "Language:"
+msgstr ""
+
+#: src/template.c:4389 src/template.c:4810
+msgid "Datatype:"
+msgstr ""
+
+#: src/template.c:4449 src/template.c:4555
+msgid "Resource:"
+msgstr ""
+
+#: src/template.c:4501
+msgid "Literal:"
+msgstr ""
+
+#: src/template.c:4625
+msgid "Template:"
+msgstr ""
+
+#: src/template.c:4751
+msgid "Type:"
+msgstr ""
+
+#: src/template.c:4840
+msgid "Value:"
+msgstr ""
+
+#: src/template.c:4965
+msgid "List"
+msgstr ""
+
+#: src/template.c:5002
+#, c-format
+msgid "Min Card.: %d"
+msgstr ""
+
+#: src/template.c:5009
+#, c-format
+msgid "Max Card.: infinite"
+msgstr ""
+
+#: src/template.c:5011
+#, c-format
+msgid "Max Card.: %d"
+msgstr ""
+
+#: src/template.c:5187
+msgid "Comment:"
+msgstr ""
+
+#: src/template.c:5285
+msgid "<b>Type</b>"
+msgstr ""
+
+#: src/template.c:5337
+msgid "<b>Template</b>"
+msgstr ""
+
+#: src/template.c:5439 src/template.c:5561
+msgid "No a compatible resource!"
+msgstr ""
+
+#: src/template.c:5457 src/template.c:5579
+msgid "No a compatible blank node. Do you want create a automatic name?"
+msgstr ""
+
+#: src/template.c:5769
+msgid "Template edit..."
+msgstr ""
+
+#: src/template.c:5782
+msgid "Select the Subject"
+msgstr ""
+
+#: src/template.c:5841
+msgid "Select a Subject!"
+msgstr ""
+
+#: src/template.c:5946
+#, c-format
+msgid "Set %d of %d RDF triples"
+msgstr ""
+
+#: src/template.c:5951
+msgid "RDF triples ignored"
+msgstr ""
+
+#: src/update.c:246
+#, c-format
+msgid ""
+"A new release of %s is out!\n"
+"Try %s %s!"
+msgstr ""
+
+#: src/update.c:321
+msgid "No updates found!"
+msgstr ""
+
+#: src/update.c:326 src/update.c:339
+msgid "Remote templates"
+msgstr ""
+
+#: src/update.c:364
+msgid "Name"
+msgstr ""
+
+#: src/update.c:372
+msgid "Description"
+msgstr ""
+
+#: src/update.c:380
+msgid "Author"
+msgstr ""
+
+#: src/update.c:417
+msgid "Select some templates!"
+msgstr ""

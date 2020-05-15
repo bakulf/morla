@@ -1,0 +1,102 @@
+MORLA's JAVASCRIPT
+~~~~~~~~~~~~~~~~~~
+
+Functions
+~~~~~~~~~
+
+The Javascript code for the functionInit, functionCheck, functionDestroy and
+functionSave is able to use these internal functions:
+
+- morla_alert(something) - it shows a popup and returns NULL.
+	ex: morla_alert("test 1");
+
+- morla_confirm(something) - it asks something to the user and returns 1 if it
+			     has choosed "OK", otherwise 0.
+	ex: if(morla_confirm("Do you like morla?"))
+		morla_alert("Cool!");
+	    else
+		morla_alert("Doh...");
+
+- morla_get_value() - it  returns an array. This is an example:
+	ex: var what=morla_get_value();
+            var text="The value is: " + what[MORLA_VALUE] +
+		      "\nThe lang is: " + what[MORLA_LANGUAGE] +
+		      "\nThe datatype is: " + what[MORLA_DATATYPE] +
+		      "\nThe type is: ";
+
+	     switch(what[MORLA_TYPE]) {
+                case MORLA_RDF_RESOURCE: text+="Resource"; break;
+                case MORLA_RDF_LITERAL: text+="Language"; break;
+                case MORLA_RDF_BLANKNODE: text+="Bnode"; break;
+		default: text+="Unknown"; break;
+	     }
+
+	     morla_alert(text);
+
+- morla_set_value(array) - it sets the values into the current input.
+	ex: morla_set_value(["value", "lang", "datatype", MORLA_RDF_LITERAL]);
+
+- morla_version() - it returns the morla version as a string.
+
+
+Global Variables
+~~~~~~~~~~~~~~~~
+
+There are these variables:
+
+- MORLA_OK -> 0
+- MORLA_FAILURE -> 1
+- MORLA_VALUE -> 0
+- MORLA_LANGUAGE -> 1
+- MORLA_DATATYPE -> 2
+- MORLA_TYPE -> 3
+- MORLA_RDF_BLANKNODE -> 0
+- MORLA_RDF_LITERAL -> 1
+- MORLA_RDF_RESOURCE -> 2
+
+Morla must return a morla_status=0 if every thing is fine. If it is not, the
+template does't show messages so the javascript code must do it.
+
+functionInit
+~~~~~~~~~~~~
+
+The functioInit must be a Javascript that contains the init procedure. You can
+manage the inputs and the single elements of it. For example you can set a
+default value or creates variables for the next functions. It is not important
+the morla_status flag.
+
+functionDestroy
+~~~~~~~~~~~~~~~
+
+This function is executed when the object is destroied. It is really useless
+but maybe you can show popup, messages, or other info when the template will
+be closed. The morla_status is not important.
+
+functionCheck
+~~~~~~~~~~~~~
+
+You can use this function if you want check the value of the input. The
+important info about this function is the check: the morla_status must be 0
+and it means "no error about this input". If the morla_status contains other
+values (1, -1, what you want) the checking procedure will be stopped.
+
+The checking procedure runs before saving the data so if you stop this
+procedure with a functionCheck returing a morla_status to 1, the template
+doesn't save the data.
+
+An important stuff is the message. This function must show the reason of
+the error with a morla_alert of something like that.
+
+functionSave
+~~~~~~~~~~~~
+
+This function is the latest function before saving. If you want change the
+value of the current input you must use morla_set_value here. The morla_status
+variable is not important here.
+
+
+Questions, contacts
+~~~~~~~~~~~~~~~~~~~
+
+Write me: bakunin@morlardf.net
+

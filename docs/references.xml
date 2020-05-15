@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<morla>
+  <title>References</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>RDF raccomandations</title>
+
+    <p>
+      The RDF, <link external="http://www.w3.org/RDF/">Resource Description Framework</link>, is an idea of W3C members. These links are the ufficial documentation about this format:
+    </p>
+
+    <list>
+    <item><s><link external="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML Syntax Specification</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/rdf-schema/">RDF Vocabulary Description Language 1.0: RDF Schema</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/rdf-primer/">RDF Primer</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/rdf-concepts/">Resource Description Framework (RDF): Concepts and Abstract Syntax</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/rdf-mt/">RDF Semantics</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/rdf-testcases/">RDF Test Cases</link></s></item>
+    </list>
+
+  </section>
+
+  <section>
+    <title>OWL raccomandations</title>
+
+    <p>
+    Ontology is about the exact description of things and their relationships.
+    For the web, ontology is about the exact description of web information
+    and relationships between web information.</p>
+
+    <list>
+    <item><s><link external="http://www.w3.org/TR/owl-features/">OWL Web Ontology Language Overview</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/owl-guide/">OWL Web Ontology Language Guide</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/owl-ref/">OWL Web Ontology Language Reference</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/owl-semantics/">OWL Web Ontology Language Semantics and Abstract Syntax</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/owl-test/">OWL Web Ontology Language Test Cases</link></s></item>
+    </list>
+
+  </section>
+
+  <section>
+    <title>XML raccomandations</title>
+
+    <p>The Extensible Markup Language (<link external="http://www.w3.org/XML/">(XML</link>) is a W3C-recommended general-purpose markup language for creating special-purpose markup languages, capable of describing many different kinds of data.</p>
+
+    <list>
+    <item><s><link external="http://www.w3.org/TR/REC-xml/">Extensible Markup Language (XML) 1.0</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xml11/">Extensible Markup Language (XML) 1.1</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/REC-xml-names/">Namespaces in XML</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xinclude/">XML Inclusions (XInclude)</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xpath/">XML Path Language (XPath)</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xslt">XSL Transformations (XSLT)</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xptr-framework/">XPointer Framework</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xptr-element/">XPointer element() Scheme</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xptr-xmlns/">XPointer xmlns() Scheme</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xlink/">XML Linking Language (XLink)</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xmlbase/">XML Base</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xmlschema-0/">XML Schema Part 0: Primer</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xmlschema-1/">XML Schema Part 1: Structures</link></s></item>
+    <item><s><link external="http://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes</link></s></item>
+    </list>
+  </section>
+</morla>

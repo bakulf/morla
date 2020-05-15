@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<morla>
+  <title>Morla's functions</title>
+  
+  <copyright>
+    <author>Andrea Marchesini</author>
+    <licence>Creative Commons By - Sa 3.0</licence>
+  </copyright>
+
+  <section>
+    <title>List of morla's functions</title>
+
+    <list>
+      <item><s><link internal="functions/rdf.xml">RDF documents</link>:
+        how you can open local files or URIs</s></item>
+
+      <item><s><link internal="functions/rdfs.xml">RDFS</link>:
+        to see, to change, to import vocabolaries</s></item>
+
+      <item><s><link internal="functions/triples.xml">RDF Triples</link>:
+        to add and to change semantic RDF triples</s></item>
+
+      <item><s><link internal="functions/templates.xml">The templates</link>:
+        What the templates are, how morla imports and uses them. How you can create new templates</s></item>
+
+      <item><s><link internal="functions/graph.xml">The graphs</link>:
+        to transform a RDF Document in an image</s></item>
+
+      <item><s><link internal="functions/navigator.xml">The navigator</link>:
+        to surf between RDF Triples</s></item>
+
+      <item><s><link internal="functions/query.xml">Queries</link>:
+        morla supports 2 type of query languages (RDQL and SPARQL).</s></item>
+    </list>
+
+  </section>
+
+</morla>
